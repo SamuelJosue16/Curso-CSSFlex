@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+        }
+
+        body{
+            background-color: white;
+            color: white;
+            font-size: 24px;
+            font-family: sans-serif;            
+        }
+
+        .container{
+            background-color: rgb(42, 42, 42);
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+        }    
+        .item{
+            font-size: 3rem;
+            background-color: grey;
+            border: 5px solid black;
+            flex-basis: 100px;
+        }
+
+        .i2{
+            align-self: center;
+            order: 100;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <article class="item">Flex element1</article>
+        <article class="item i2">Flex element2</article>
+        <article class="item">Flex element3</article>
+        <article class="item">Flex element4</article>
+    </section>   
+</body>
+</html>
